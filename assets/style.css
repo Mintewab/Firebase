@@ -7,6 +7,7 @@ body {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
 #current-train-schedule {
     text-align: center;
     color: white;
@@ -16,4 +17,21 @@ body {
 #current-train-container {
     background-color: #cccccc;
     color: #29293d;
+}
+
+#add-train-container {
+    background: #cccccc;
+    color: #29293d;
+}
+
+#add-train {
+    text-align: center;
+    color: white;
+    background: #29293d;
+}
+
+#submit {
+    text-align: center;
+    color: white;
+    background: #29293d;
 }
