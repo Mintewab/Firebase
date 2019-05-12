@@ -39,16 +39,16 @@ $("#submit").on("click", function (event) {
     });
     var childRow = '<tr class="train-data-child"> <td class="train-name">' + trainName + '</td> <td class="destination">' + destination + '</td> <td class="frequency">' + frequency + '</td> <td class="next-arrival">' + nextArrival + '</td> <td class="minutes-away">' + minutesAway + '</td></tr > '
 
-      $("#train-data").append(childRow);
+    $("#train-data").append(childRow);
 });
 
 trainRef.on('child_added', function (data) {
 
 });
 
-firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     // ...
-  });
+});
