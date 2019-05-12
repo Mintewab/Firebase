@@ -29,3 +29,5 @@ $("#submit").on("click", function (event) {
     destination = $("#destination-input").val().trim();
     time = $("#time-input").val().trim();
     frequency = $("#frequency-input").val().trim();
+
+    var newPostRef = trainRef.push({
