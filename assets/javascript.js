@@ -31,3 +31,9 @@ $("#submit").on("click", function (event) {
     frequency = $("#frequency-input").val().trim();
 
     var newPostRef = trainRef.push({
+        "trainName": trainName,
+        "destination": destination,
+        "frequency": frequency,
+        "minutesAway": minutesAway,
+        "nextArrival": nextArrival.format("HH:mm").toString()
+    });
