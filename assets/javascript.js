@@ -9,3 +9,15 @@ var config = {
 };
 
 firebase.initializeApp(config);
+
+var database = firebase.database();
+var trainRef = database.ref("train-data/")
+
+var frequency = 4;
+var firstTime = "08:30";
+var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
+var currentTime = moment();
+var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+var tRemainder = diffTime % frequency;
+var minutesAway = frequency - tRemainder;
+var nextArrival = moment().add(minutesAway, "minutes");
