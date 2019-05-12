@@ -41,3 +41,7 @@ $("#submit").on("click", function (event) {
 
       $("#train-data").append(childRow);
 });
+
+trainRef.on('child_added', function (data) {
+
+});
