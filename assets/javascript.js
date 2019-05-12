@@ -21,3 +21,6 @@ var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
 var tRemainder = diffTime % frequency;
 var minutesAway = frequency - tRemainder;
 var nextArrival = moment().add(minutesAway, "minutes");
+
+$("#submit").on("click", function (event) {
+    event.preventDefault();
