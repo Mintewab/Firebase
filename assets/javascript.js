@@ -24,3 +24,8 @@ var nextArrival = moment().add(minutesAway, "minutes");
 
 $("#submit").on("click", function (event) {
     event.preventDefault();
+
+    trainName = $("#train-name-input").val().trim();
+    destination = $("#destination-input").val().trim();
+    time = $("#time-input").val().trim();
+    frequency = $("#frequency-input").val().trim();
