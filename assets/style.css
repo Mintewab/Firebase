@@ -1,3 +1,19 @@
 body {
     background-image: url("https://cdn.wallpapersafari.com/78/71/EOF83u.jpg");
 }
+#title-container {
+    background: #29293d;
+    font-style: italic bold;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#current-train-schedule {
+    text-align: center;
+    color: white;
+    background: #29293d;
+}
+
+#current-train-container {
+    background-color: #cccccc;
+    color: #29293d;
+}
