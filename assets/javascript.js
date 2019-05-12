@@ -37,10 +37,7 @@ $("#submit").on("click", function (event) {
         "minutesAway": minutesAway,
         "nextArrival": nextArrival.format("HH:mm").toString()
     });
-
     var childRow = '<tr class="train-data-child"> <td class="train-name">' + trainName + '</td> <td class="destination">' + destination + '</td> <td class="frequency">' + frequency + '</td> <td class="next-arrival">' + nextArrival + '</td> <td class="minutes-away">' + minutesAway + '</td></tr > '
 
-  
-
-
+      $("#train-data").append(childRow);
 });
